@@ -50,4 +50,14 @@ public class SuperficieTest {
         
     }
     
+    @org.junit.Test
+    public void testCarreTestFail() {
+        System.out.println("Carre");
+        double length = -5.0;
+        double expResult = -25.0;
+        double result = Superficie.Carre(length);
+        assertEquals(expResult, result, 0.01);
+        
+    }
+    
 }
